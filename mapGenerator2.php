@@ -1,6 +1,6 @@
 <?php
 
-
+/*here's a change*/
 $db = new mysqli("localhost", "root", "root", "intro_to_php");
 if($db->connect_errno){
 
