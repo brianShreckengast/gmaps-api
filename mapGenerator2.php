@@ -1,6 +1,8 @@
 <?php
 
 /*here's a change*/
+
+//Here's another change!
 $db = new mysqli("localhost", "root", "root", "intro_to_php");
 if($db->connect_errno){
 
@@ -55,7 +57,7 @@ if(isset($_POST['submit'])){
 	}
 
 }	
-
+//hi git!
 
 ?>
 
@@ -76,4 +78,5 @@ if(isset($_POST['submit'])){
 
 
 </html>
+
 
