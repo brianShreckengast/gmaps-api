@@ -27,7 +27,7 @@ $sql = "SELECT * FROM markers";
 
 $result = $db->query($sql);
 
-if (!empty($result)){
+if (empty($result)){
 
 	echo drawMarkers($result);
 
@@ -35,7 +35,7 @@ if (!empty($result)){
 
 else {
 
-	echo '<img src ="https://maps.googleapis.com/maps/api/staticmap?center=austin+texas&size=600x300">';
+	/*echo '<img src ="https://maps.googleapis.com/maps/api/staticmap?center=austin+texas&size=600x300">';*/
 	}
 
 
@@ -59,7 +59,7 @@ if(isset($_POST['submit'])){
 
 ?>
 
-<br>
+<div style ="float:left;">
 <p>Enter a new location to add a marker</p>
 <p>khkhk</p>
 
@@ -72,7 +72,7 @@ if(isset($_POST['submit'])){
 
 </form>
 
-
+</div>
 
 
 </html>
